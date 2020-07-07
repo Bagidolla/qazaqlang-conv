@@ -1,28 +1,54 @@
 <html>
 <head>
-<script language="JavaScript" src="vit.js"></script>
-<link rel="stylesheet" type="text/css" href="default.css" />
+    <script language="JavaScript" src="vit.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="default.css"/>
 </head>
-<div class="container">	
+<div class="container pt-3">
 
-<table>
-<h2>Кирилден латыншаға конвертер</h2>
-<br>
+    <table>
+        <h1>Кирилден латыншаға конвертер</h1>
+        <br>
 
-<form name="formCyrToLat"> 
- <br> <b>Қазақша кирил әріптерімен мәтін жазыңыз.</b><br>
-<br> 
-<textarea name="txtBoxCyr" rows="16" cols="64"></textarea>  <br><br>
-<input class="button default" type="button" name="RusLat" value="Түрлендіру" onclick="RusLatTranliter();"> 
-<input class="button default" type="reset" name="Reset" value="Тазарту"> 
-<br><br>
-<b>Түрлендіру нәтижесі (латын).</b><br>
-<br>
-<textarea name="txtBoxLat" rows="16" cols="64" id="Textarea1"></textarea>  <br><br>
-</form>
-</table>
-</div>	
-<style>	#sign {width: 110px;height: 33px;padding: 0;margin: 0;position: fixed;right: 0;bottom: 0;}</style>	
-<div id="sign"><a href="http://adatum.ru/2013/03/25/pishem-prostejshij-konverter-teksta-iz-kirillitsy-v-latinitsu/"><img src="http://www.Adatum.ru/file/adatum.png" border="0">Adatum</a></div>
- </body>
- </html>
+        <form name="formCyrToLat">
+            <div class="row mb-2">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Қазақша кирил әріптерімен мәтін жазыңыз</label>
+                        <textarea class="form-control w-100" id="exampleFormControlTextarea1" name="txtBoxCyr" rows="10" ></textarea>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="Textarea1">Түрлендіру нәтижесі (латын)</label>
+                        <textarea class="form-control w-100" id="Textarea1" name="txtBoxLat" rows="10" ></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <input class="btn btn-primary" type="button" name="RusLat" value="Түрлендіру" onclick="RusLatTranliter();">
+                    <input class="btn btn-light" type="reset" name="Reset" value="Тазарту">
+                </div>
+            </div>
+        </form>
+    </table>
+</div>
+<style>    #sign {
+    width: 110px;
+    height: 33px;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}</style>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</body>
+</html>
