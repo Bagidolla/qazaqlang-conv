@@ -1,56 +1,55 @@
 /* General Demo Style */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700&subset=latin,cyrillic-ext,cyrillic);
 
-html { height: 100%; font-size: 100%;}
+/*html { height: 100%; font-size: 100%;}*/
 
-*,
-*:after,
-*:before {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
-}
+/**,*/
+/**:after,*/
+/**:before {*/
+	/*-webkit-box-sizing: border-box;*/
+	/*-moz-box-sizing: border-box;*/
+	/*box-sizing: border-box;*/
+	/*padding: 0;*/
+	/*margin: 0;*/
+/*}*/
 
-/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
+/*!* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ *!*/
+/*.clearfix:before,*/
+/*.clearfix:after {*/
+    /*content: " ";*/
+    /*display: table;*/
+/*}*/
 
-#sign {width: 110px;height: 33px;padding: 0;margin: 0;position: fixed;right: 0;bottom: 0;}
+/*#sign {width: 110px;height: 33px;padding: 0;margin: 0;position: fixed;right: 0;bottom: 0;}*/
 
-.clearfix:after {
-    clear: both;
-}
+/*.clearfix:after {*/
+    /*clear: both;*/
+/*}*/
 
-.clearfix {
-    *zoom: 1;
-}
+/*.clearfix {*/
+    /**zoom: 1;*/
+/*}*/
 
-body {
-   font-family: 'Open Sans', sans-serif;
-    background: #f9f9f9;
-    font-weight: 400;
-    font-size: 10pt;
-    color: #333;
-    overflow: scroll;
-    overflow-x: hidden;
-
-}
+/*body {*/
+   /*font-family: 'Open Sans', sans-serif;*/
+    /*background: #f9f9f9;*/
+    /*font-weight: 400;*/
+    /*font-size: 10pt;*/
+    /*color: #333;*/
+    /*overflow: scroll;*/
+    /*overflow-x: hidden;*/
+/*}*/
 
 a {
 	color: #555;
 	text-decoration: none;
 }
 
-.container {
-	width: 70%;
-	position: relative;
-		margin: 0 auto;
-}
+/*.container {*/
+	/*width: 70%;*/
+	/*position: relative;*/
+		/*margin: 0 auto;*/
+/*}*/
 
 .main,
 .container > header {
@@ -178,4 +177,10 @@ a.button.big {
 .def{
  font-size: 8pt;
   color: #d7e4ea;
+}
+
+@media all and (max-width: 575px) {
+    textarea.form-control {
+        height: 250px!important;
+    }
 }
